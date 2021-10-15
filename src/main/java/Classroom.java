@@ -67,6 +67,8 @@ public class Classroom{
         int total = h*l*w;
         return total;
     }
+    
+    
 
 
     public static void main(String[] args){
@@ -77,6 +79,12 @@ public class Classroom{
 
         System.out.println("Class number: " + getClassNumber(classroom.getClassNumber()));
         System.out.println(getNumWindows(classroom.getNumWindows()));
+        
+        String oneMillionHello = "";
+        for (int i = 0; i < 1000000; i++) {
+            oneMillionHello = oneMillionHello + "Hello!";
+        }
+        System.out.println(oneMillionHello.substring(0, 6));
 
     }
 
