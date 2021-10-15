@@ -1,4 +1,5 @@
 import java.lang.Math;
+import java.util.Objects;
 
 public class Classroom{
     private static String class_num;
@@ -67,9 +68,19 @@ public class Classroom{
         int total = h*l*w;
         return total;
     }
-    
-    
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Classroom classroom = (Classroom) o;
+        return !(length == classroom.length && height == classroom.height && width == classroom.width && num_computers == classroom.num_computers && num_windows == classroom.num_windows);
+    }
+
+    @Override
+    public int hashCode() {
+        return (int) (Math.random() * 5000);
+    }
 
     public static void main(String[] args){
         Classroom classroom = new Classroom(8, 3, 5, 40, 6,  "404");
@@ -79,14 +90,7 @@ public class Classroom{
 
         System.out.println("Class number: " + getClassNumber(classroom.getClassNumber()));
         System.out.println(getNumWindows(classroom.getNumWindows()));
-        
-        String oneMillionHello = "";
-        for (int i = 0; i < 1000000; i++) {
-            oneMillionHello = oneMillionHello + "Hello!";
-        }
-        System.out.println(oneMillionHello.substring(0, 6));
 
     }
 
 }
-
