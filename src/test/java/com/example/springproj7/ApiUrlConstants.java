@@ -1,4 +1,4 @@
-package com.example.springproj6;
+package com.example.springproj7;
 
 public class ApiUrlConstants {
 
