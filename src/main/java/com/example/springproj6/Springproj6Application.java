@@ -1,4 +1,4 @@
-package com.example.springproj5;
+package com.example.springproj6;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Springproj6Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(com.example.springproj5.Springproj6Application.class, args);
+        SpringApplication.run(com.example.springproj6.Springproj6Application.class, args);
     }
 
 }
